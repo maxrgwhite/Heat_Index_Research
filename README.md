@@ -6,11 +6,12 @@ You will need some spatial data to run the code. I used ERA5-Land data at the ho
 
 The following notebooks (not python files – for your editing convenience) need to be executed in order:
 1. 1_ERA5-Land_Data_Requests.ipynb
-   - You will need a Copernicus account and to specify your [CDS API key]([url](https://ecmwf-projects.github.io/copernicus-training-c3s/cds-tutorial.html))
-     ()
-3. 2_Creating_and_concatenating_cubes.ipynb
+   - You will need a Copernicus (CDS) account and to specify your CDS API Key. See the following link for a tutorial: https://ecmwf-projects.github.io/copernicus-training-c3s/cds-tutorial.html
+2. 2_Creating_and_concatenating_cubes.ipynb
+   - This will create Iris "cubes" out of the individually requested files from step 1
 4. 3_Cube_creation_frontend.ipynb
+   - Takes about 2+days to run for a Limpopo province-sized region
 5. 4_Data_Analysis_frontend.ipynb
 
-The first and third notebook can take a long time to run. For a Limpopo province sized region, the first notebook will take about 8 hours to run. think overnight for the first notebook, and 2+ days for the second notebook. Bare in mind that the secon 
-Don't worry about the equivalent "backend" 
+**Useful tips**
+Don't worry about the equivalent "backend" files unless you'd like to make some changes to outputs
